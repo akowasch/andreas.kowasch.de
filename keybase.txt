@@ -1,0 +1,57 @@
+==================================================================
+https://keybase.io/akowasch
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://andreas.kowasch.de
+  * I am akowasch (https://keybase.io/akowasch) on keybase.
+  * I have a public key ASA6UKAaM7vdji25K7CLjeT4KvLfflV4UMEMeAuWMtahswo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120fc36170ecd2405bb18917766b19bb0175bef0228de32053e44417a62d3ee13e80a",
+      "host": "keybase.io",
+      "kid": "01203a50a01a33bbdd8e2db92bb08b8de4f82af2df7e557850c10c780b9632d6a1b30a",
+      "uid": "796206ff695e1130c1ac85ada3966c19",
+      "username": "akowasch"
+    },
+    "merkle_root": {
+      "ctime": 1649524522,
+      "hash": "5e3a534e82dab8aeab523874c3769c2a64dc1ef07e24bf00f45c0316e9762c80ca88c85795d97405cc024f88bce1a4a38e76a6fdbe55fe696f6480047edd5c20",
+      "hash_meta": "17c36c41715a1c9aade8b1c8f9d3872476afbcd981842de02c04e24b2deeb041",
+      "seqno": 22263139
+    },
+    "service": {
+      "entropy": "t51HyKOGbt2PirqoplHDUs3X",
+      "hostname": "andreas.kowasch.de",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.0"
+  },
+  "ctime": 1649524561,
+  "expire_in": 504576000,
+  "prev": "07d3567faa06b978f776b12f8834a556d3dd15e4aa44e37ddc54ae8e2e95d7a2",
+  "seqno": 67,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgOlCgGjO73Y4tuSuwi43k+Cry335VeFDBDHgLljLWobMKp3BheWxvYWTESpcCQ8QgB9NWf6oGuXj3drEviDSlVtPdFeSqRON93FSuji6V16LEIHuZClCe7nN5mho0/VCevla++ilDFPQtLxzR08MSHSx7AgHCo3NpZ8RAXNbpqVA9K44TnvXTMeFTR43u4YNaHWncEpjluTKWooPmIiwKt8Xa0l7o7aM7ST1Mhr7bbj97iscs5Ot/ltIJAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGuxLS0gU05lJbt/SoZ1ucGQOvx6g+3OO18ZKNBOfDqBo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/akowasch
+
+==================================================================
+
