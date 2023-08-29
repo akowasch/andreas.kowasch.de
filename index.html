@@ -8,20 +8,22 @@
     <meta name="author" content="Andreas Kowasch">
     <meta name="description" content="Mein persönliches Profil">
     <meta name="robots" content="all">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha256-mIfhv/h3MLq3WSiSlduuZO3saRNzzuf1LK8w3z3l3JY= sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi sha512-0qva1kjNmhFwWRoVmuj+0vV8NFK9ZZ87k6Q+MbL5Fz6/9ZzsgZRgRhfhyNkIFhlrINS1+zID9q1AMtLkkiabVQ==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0= sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="Stylesheet" href="css/content.css" type="text/css" media="all" />
     <link rel="shortcut icon" href="img/favicon.ico">
   </head>
   <body>
 
-    <nav class="navbar navbar-fixed-top navbar-dark hidden-print">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
       <div class="container">
-        <button class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#navigation"></button>
-        <div class="collapse navbar-toggleable-xs" id="navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
           <ul class="nav navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" data-toggle="tab" href="#about">Über mich <span class="sr-only">(aktuell)</span></a>
+              <a class="nav-link pl-0" data-toggle="tab" href="#about">Über mich <span class="sr-only">(aktuell)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="tab" href="#cv">Lebenslauf</a>
@@ -37,12 +39,12 @@
       </div>
     </nav>
 
-    <div class="navbar-fix hidden-print"></div>
+    <div class="navbar-fix d-print-none"></div>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid clearfix">
       <div class="container">
-        <img src="img/me.png" class="img-header img-thumbnail float-xs-left hidden-sm-down" alt="" />
-        <br class="hidden-md-down" />
+        <img src="img/me.png" class="img-header img-thumbnail float-left d-none d-md-block" alt="" />
+        <br class="d-none d-lg-block" />
         <h1>Hallo, <small class="text-primary">ich bin Andreas Kowasch!</small></h1>
         Ich freue mich, dass Sie den Weg auf mei­ne Web­seite ge­fun­den ha­ben.
         Sie dient in ers­ter Li­nie da­zu mich vor­zu­stel­len, aber auch neue Kon­tak­te zu knüp­fen,
@@ -90,7 +92,7 @@
               <i class="fa fa-language fa-fw"></i>
               <strong>Sprachen</strong>
             </div>
-            <div class="col-sm-7 col-lg-8 col-xl-9">Deutsch <span class="text-muted">(Muttersprache)</span> <br class="hidden-lg-up" /> <span class="hidden-md-down">·</span> Englisch <span class="text-muted">(konversationssicher<span class="hidden-md-down"> · GER/CEF: B2</span>)</span></div>
+            <div class="col-sm-7 col-lg-8 col-xl-9">Deutsch <span class="text-muted">(Muttersprache)</span> <br class="d-lg-none" /> <span class="d-none d-lg-inline">·</span> Englisch <span class="text-muted">(konversationssicher<span class="d-none d-lg-inline"> · GER/CEF: B2</span>)</span></div>
           </div>
 
           <div class="row first-lvl">
@@ -106,7 +108,7 @@
               <i class="fa fa-university fa-fw"></i>
               <strong>Akademischer Grad</strong>
             </div>
-            <div class="col-sm-7 col-lg-8 col-xl-9">Master of Science in Informatik <span class="text-muted hidden-md-down">(M.Sc.)</span></div>
+            <div class="col-sm-7 col-lg-8 col-xl-9">Master of Science in Informatik <span class="text-muted d-none d-lg-inline">(M.Sc.)</span></div>
           </div>
 
           <div class="row first-lvl">
@@ -132,23 +134,19 @@
             <button class="btn btn-sm btn-static">Wandern</button>
           </p>
 
-          <div class="row footer rounded-bottom hidden-print">
+          <div class="row footer rounded-bottom d-print-none">
 
-            <div class="col-xs-12 col-sm-4 push-sm-4 text-xs-center text-nowrap">
+            <div class="col-12 col-sm-4 text-sm-left text-nowrap"></div>
+
+            <div class="col-12 col-sm-4 text-sm-center text-nowrap">
               <i class="fa fa-angle-double-up fa-fw"></i>
               <a href="#" class="link-top">Seitenanfang</a>
             </div>
 
-            <span class="col-xs-12 vspace-0-5 hidden-sm-up"></span>
-
-            <div class="col-xs-6 col-sm-4 pull-sm-4 text-xs-center text-sm-left text-nowrap"></div>
-
-            <div class="col-xs-6 col-sm-4 text-xs-center text-sm-right text-nowrap">
+            <div class="col-12 col-sm-4 text-sm-right text-nowrap">
               <a href="#cv" class="navigate">Lebenslauf</a>
               <i class="fa fa-angle-double-right fa-fw"></i>
             </div>
-
-            <span class="col-xs-12 vspace-0-5 hidden-sm-up"></span>
 
           </div>
 
@@ -158,12 +156,12 @@
 
         <div class="tab-pane" id="cv" role="tabpanel">
 
-          <span class="float-md-right text-xs-center text-md-right text-lg-left text-nowrap d-block hidden-print">
-            <a href="#" class="link-collapse-show">&#8595; Alle Details einblenden</a> <span class="hidden-xs-down">|</span><br class="hidden-sm-up" />
+          <span class="float-md-right text-sm-center text-md-right text-lg-left text-nowrap d-block d-print-none">
+            <a href="#" class="link-collapse-show">&#8595; Alle Details einblenden</a> <span class="d-none d-sm-inline">|</span><br class="d-sm-none" />
             <a href="#" class="link-collapse-hide">&#8593; Alle Details ausblenden</a>
           </span>
 
-          <hr class="hidden-md-up" />
+          <hr class="d-md-none" />
 
           <h2>Berufserfahrung</h2>
 
@@ -182,7 +180,7 @@
               <strong>Platform Engineer</strong><br />
               <i class="fa fa-building fa-fw"></i>
               QAware GmbH, München
-              <span class="float-lg-right text-nowrap d-block hidden-print">
+              <span class="float-lg-right text-nowrap d-block d-print-none">
                 <a href="#qaware-1" data-toggle="collapse" data-toggle-type="main">&#8595; Details einblenden</a>
               </span>
 
@@ -278,7 +276,7 @@
               <strong>Software-Entwickler</strong><br />
               <i class="fa fa-building fa-fw"></i>
               QAware GmbH, München
-              <span class="float-lg-right text-nowrap d-block hidden-print">
+              <span class="float-lg-right text-nowrap d-block d-print-none">
                 <a href="#qaware-2" data-toggle="collapse" data-toggle-type="main">&#8595; Details einblenden</a>
               </span>
 
@@ -340,7 +338,7 @@
               <strong>Software-Entwickler und -Tester</strong><br />
               <i class="fa fa-building fa-fw"></i>
               Vodafone Kabel Deutschland GmbH, München
-              <span class="float-lg-right text-nowrap d-block hidden-print">
+              <span class="float-lg-right text-nowrap d-block d-print-none">
                 <a href="#vodafone" data-toggle="collapse" data-toggle-type="main">&#8595; Details einblenden</a>
               </span>
 
@@ -481,7 +479,7 @@
               <strong>Systemadministrator und Software-Entwickler</strong><br />
               <i class="fa fa-building fa-fw"></i>
               Technische Universität München
-              <span class="float-lg-right text-nowrap d-block hidden-print">
+              <span class="float-lg-right text-nowrap d-block d-print-none">
                 <a href="#tum-work" data-toggle="collapse" data-toggle-type="main">&#8595; Details einblenden</a>
               </span>
 
@@ -613,7 +611,7 @@
               <strong>Informatik - Master of Science (M.Sc.)</strong><br />
               <i class="fa fa-university fa-fw"></i>
               Hochschule für angewandte Wissenschaften München
-              <span class="float-lg-right text-nowrap d-block hidden-print">
+              <span class="float-lg-right text-nowrap d-block d-print-none">
                 <a href="#hm-master" data-toggle="collapse" data-toggle-type="main">&#8595; Details einblenden</a>
               </span>
 
@@ -752,7 +750,7 @@
               <strong>Informatik - Bachelor of Science (B.Sc.)</strong><br />
               <i class="fa fa-university fa-fw"></i>
               Hochschule für angewandte Wissenschaften München
-              <span class="float-lg-right text-nowrap d-block hidden-print">
+              <span class="float-lg-right text-nowrap d-block d-print-none">
                 <a href="#hm-bachelor" data-toggle="collapse" data-toggle-type="main">&#8595; Details einblenden</a>
               </span>
 
@@ -903,7 +901,7 @@
               <strong>Fachinformatiker für Systemintegration</strong><br />
               <i class="fa fa-building fa-fw"></i>
               Technische Universität München
-              <span class="float-lg-right text-nowrap d-block hidden-print">
+              <span class="float-lg-right text-nowrap d-block d-print-none">
                 <a href="#tum-trainee" data-toggle="collapse" data-toggle-type="main">&#8595; Details einblenden</a>
               </span>
 
@@ -989,26 +987,22 @@
             </div>
           </div>
 
-          <div class="row footer rounded-bottom hidden-print">
+          <div class="row footer rounded-bottom d-print-none">
 
-            <div class="col-xs-12 col-sm-4 push-sm-4 text-xs-center text-nowrap">
-              <i class="fa fa-angle-double-up fa-fw"></i>
-              <a href="#" class="link-top">Seitenanfang</a>
-            </div>
-
-            <span class="col-xs-12 vspace-0-5 hidden-sm-up"></span>
-
-            <div class="col-xs-6 col-sm-4 pull-sm-4 text-xs-center text-sm-left text-nowrap">
+            <div class="col-12 col-sm-4 text-sm-left text-nowrap">
               <i class="fa fa-angle-double-left fa-fw"></i>
               <a href="#about" class="navigate">Über mich</a>
             </div>
 
-            <div class="col-xs-6 col-sm-4 text-xs-center text-sm-right text-nowrap">
+            <div class="col-12 col-sm-4 text-sm-center text-nowrap">
+              <i class="fa fa-angle-double-up fa-fw"></i>
+              <a href="#" class="link-top">Seitenanfang</a>
+            </div>
+
+            <div class="col-12 col-sm-4 text-sm-right text-nowrap">
               <a href="#qualifications" class="navigate">Qualifikationen</a>
               <i class="fa fa-angle-double-right fa-fw"></i>
             </div>
-
-            <span class="col-xs-12 vspace-0-5 hidden-sm-up"></span>
 
           </div>
 
@@ -1018,12 +1012,12 @@
 
         <div class="tab-pane" id="qualifications" role="tabpanel">
 
-          <span class="float-md-right text-xs-center text-md-right text-lg-left text-nowrap d-block hidden-print">
-            <a href="#" class="link-collapse-show">&#8595; Alle Details einblenden</a> <span class="hidden-xs-down">|</span><br class="hidden-sm-up" />
+          <span class="float-md-right text-sm-center text-md-right text-lg-left text-nowrap d-block d-print-none">
+            <a href="#" class="link-collapse-show">&#8595; Alle Details einblenden</a> <span class="d-none d-sm-inline">|</span><br class="d-sm-none" />
             <a href="#" class="link-collapse-hide">&#8593; Alle Details ausblenden</a>
           </span>
 
-          <hr class="hidden-md-up" />
+          <hr class="d-md-none" />
 
           <h2>Qualifikationen</h2>
 
@@ -1034,13 +1028,13 @@
               2014
             </div>
 
-            <hr class="hidden-md-up" />
+            <hr class="d-md-none" />
 
             <div class="col-md-9">
 
               <i class="fa fa-certificate fa-fw"></i>
-              <strong>AdA/AEVO</strong> - Nachweis der berufs- <br class="hidden-xl-up" /> und arbeitspädagogischen Qualifikation
-              <span class="float-lg-right text-nowrap d-block hidden-print">
+              <strong>AdA/AEVO</strong> - Nachweis der berufs- <br class="d-xl-none" /> und arbeitspädagogischen Qualifikation
+              <span class="float-lg-right text-nowrap d-block d-print-none">
                 <a href="#ada" data-toggle="collapse" data-toggle-type="main">&#8595; Details einblenden</a>
               </span>
 
@@ -1055,8 +1049,8 @@
                   <div class="col-sm-5 col-lg-3">Webseite</div>
                   <div class="col-sm-7 col-lg-9">
                     <i class="fa fa-external-link fa-fw"></i>
-                    <a class="hidden-lg-down" href="https://www.ihk-muenchen.de/de/Aus-und-Weiterbildung/Ausbildung/Ausbildungsberatung/VOR-der-Ausbildung/Ausbildung-der-Ausbilder-(AdA)%E2%80%8E/" target="_blank">https://www.ihk-muenchen.de/.../Ausbildung-der-Ausbilder-(AdA)</a>
-                    <a class="hidden-xl-up" href="https://www.ihk-muenchen.de/de/Aus-und-Weiterbildung/Ausbildung/Ausbildungsberatung/VOR-der-Ausbildung/Ausbildung-der-Ausbilder-(AdA)%E2%80%8E/" target="_blank">https://www.ihk-muenchen.de</a>
+                    <a class="d-none d-xl-inline" href="https://www.ihk-muenchen.de/de/Aus-und-Weiterbildung/Ausbildung/Ausbildungsberatung/VOR-der-Ausbildung/Ausbildung-der-Ausbilder-(AdA)%E2%80%8E/" target="_blank">https://www.ihk-muenchen.de/.../Ausbildung-der-Ausbilder-(AdA)</a>
+                    <a class="d-xl-none" href="https://www.ihk-muenchen.de/de/Aus-und-Weiterbildung/Ausbildung/Ausbildungsberatung/VOR-der-Ausbildung/Ausbildung-der-Ausbilder-(AdA)%E2%80%8E/" target="_blank">https://www.ihk-muenchen.de</a>
                   </div>
                 </div>
 
@@ -1077,13 +1071,13 @@
               2010
             </div>
 
-            <hr class="hidden-md-up" />
+            <hr class="d-md-none" />
 
             <div class="col-md-9">
 
               <i class="fa fa-certificate fa-fw"></i>
               <strong>CLP</strong> - Novell Certified Linux Professional
-              <span class="float-lg-right text-nowrap d-block hidden-print">
+              <span class="float-lg-right text-nowrap d-block d-print-none">
                 <a href="#clp" data-toggle="collapse" data-toggle-type="main">&#8595; Details einblenden</a>
               </span>
 
@@ -1098,8 +1092,8 @@
                   <div class="col-sm-5 col-lg-3">Webseite</div>
                   <div class="col-sm-7 col-lg-9">
                     <i class="fa fa-external-link fa-fw"></i>
-                    <a class="hidden-lg-down" href="https://training.suse.com/certification/sce-linux" target="_blank">https://training.suse.com/certification/sce-linux</a>
-                    <a class="hidden-xl-up" href="https://training.suse.com/certification/sce-linux" target="_blank">https://training.suse.com</a>
+                    <a class="d-none d-xl-block" href="https://training.suse.com/certification/sce-linux" target="_blank">https://training.suse.com/certification/sce-linux</a>
+                    <a class="d-xl-none" href="https://training.suse.com/certification/sce-linux" target="_blank">https://training.suse.com</a>
                   </div>
                 </div>
 
@@ -1109,7 +1103,7 @@
 
               <i class="fa fa-certificate fa-fw"></i>
               <strong>CLA</strong> - SUSE Certified Linux Administrator
-              <span class="float-lg-right text-nowrap d-block hidden-print">
+              <span class="float-lg-right text-nowrap d-block d-print-none">
                 <a href="#cla" data-toggle="collapse" data-toggle-type="main">&#8595; Details einblenden</a>
               </span>
 
@@ -1124,8 +1118,8 @@
                   <div class="col-sm-5 col-lg-3">Webseite</div>
                   <div class="col-sm-7 col-lg-9">
                     <i class="fa fa-external-link fa-fw"></i>
-                    <a class="hidden-lg-down" href="https://training.suse.com/certification/sca-linux" target="_blank">https://training.suse.com/certification/sca-linux</a>
-                    <a class="hidden-xl-up" href="https://training.suse.com/certification/sca-linux" target="_blank">https://training.suse.com</a>
+                    <a class="d-none d-xl-inline" href="https://training.suse.com/certification/sca-linux" target="_blank">https://training.suse.com/certification/sca-linux</a>
+                    <a class="d-xl-none" href="https://training.suse.com/certification/sca-linux" target="_blank">https://training.suse.com</a>
                   </div>
                 </div>
 
@@ -1144,13 +1138,13 @@
               2008
             </div>
 
-            <hr class="hidden-md-up" />
+            <hr class="d-md-none" />
 
             <div class="col-md-9">
 
               <i class="fa fa-certificate fa-fw"></i>
               <strong>LPIC</strong> - Certified Linux Professional
-              <span class="float-lg-right text-nowrap d-block hidden-print">
+              <span class="float-lg-right text-nowrap d-block d-print-none">
                 <a href="#lpic" data-toggle="collapse" data-toggle-type="main">&#8595; Details einblenden</a>
               </span>
 
@@ -1165,8 +1159,8 @@
                   <div class="col-sm-5 col-lg-3">Webseite</div>
                   <div class="col-sm-7 col-lg-9">
                     <i class="fa fa-external-link fa-fw"></i>
-                    <a class="hidden-lg-down" href="https://www.lpi.org/our-certifications" target="_blank">https://www.lpi.org/our-certifications</a>
-                    <a class="hidden-xl-up" href="https://www.lpi.org/our-certifications" target="_blank">https://www.lpi.org</a>
+                    <a class="d-none d-xl-inline" href="https://www.lpi.org/our-certifications" target="_blank">https://www.lpi.org/our-certifications</a>
+                    <a class="d-xl-none" href="https://www.lpi.org/our-certifications" target="_blank">https://www.lpi.org</a>
                   </div>
                 </div>
 
@@ -1176,7 +1170,7 @@
 
               <i class="fa fa-certificate fa-fw"></i>
               <strong>BSDA</strong> - BSD Associate
-              <span class="float-lg-right text-nowrap d-block hidden-print">
+              <span class="float-lg-right text-nowrap d-block d-print-none">
                 <a href="#bsda" data-toggle="collapse" data-toggle-type="main">&#8595; Details einblenden</a>
               </span>
 
@@ -1191,8 +1185,8 @@
                   <div class="col-sm-5 col-lg-3">Webseite</div>
                   <div class="col-sm-7 col-lg-9">
                     <i class="fa fa-external-link fa-fw"></i>
-                    <a class="hidden-lg-down" href="http://www.bsdcertification.org/certification/bsd-associate" target="_blank">http://www.bsdcertification.org/certification/bsd-associate</a>
-                    <a class="hidden-xl-up" href="http://www.bsdcertification.org/certification/bsd-associate" target="_blank">http://www.bsdcertification.org</a>
+                    <a class="d-none d-xl-inline" href="http://www.bsdcertification.org/certification/bsd-associate" target="_blank">http://www.bsdcertification.org/certification/bsd-associate</a>
+                    <a class="d-xl-none" href="http://www.bsdcertification.org/certification/bsd-associate" target="_blank">http://www.bsdcertification.org</a>
                   </div>
                 </div>
 
@@ -1202,26 +1196,22 @@
 
           </div>
 
-          <div class="row footer rounded-bottom hidden-print">
+          <div class="row footer rounded-bottom d-print-none">
 
-            <div class="col-xs-12 col-sm-4 push-sm-4 text-xs-center text-nowrap">
-              <i class="fa fa-angle-double-up fa-fw"></i>
-              <a href="#" class="link-top">Seitenanfang</a>
-            </div>
-
-            <span class="col-xs-12 vspace-0-5 hidden-sm-up"></span>
-
-            <div class="col-xs-6 col-sm-4 pull-sm-4 text-xs-center text-sm-left text-nowrap">
+            <div class="col-12 col-sm-4 text-sm-left text-nowrap">
               <i class="fa fa-angle-double-left fa-fw"></i>
               <a href="#cv" class="navigate">Lebenslauf</a>
             </div>
 
-            <div class="col-xs-6 col-sm-4 text-xs-center text-sm-right text-nowrap">
+            <div class="col-12 col-sm-4 text-sm-center text-nowrap">
+              <i class="fa fa-angle-double-up fa-fw"></i>
+              <a href="#" class="link-top">Seitenanfang</a>
+            </div>
+
+            <div class="col-12 col-sm-4 text-sm-right text-nowrap">
               <a href="#contact" class="navigate">Kontakt</a>
               <i class="fa fa-angle-double-right fa-fw"></i>
             </div>
-
-            <span class="col-xs-12 vspace-0-5 hidden-sm-up"></span>
 
           </div>
 
@@ -1342,7 +1332,7 @@
 
               </div>
 
-              <hr class="hidden-lg-up" />
+              <hr class="d-lg-none" />
 
             </div>
 
@@ -1371,23 +1361,20 @@
 
           </div>
 
-          <div class="row footer rounded-bottom hidden-print">
+          <div class="row footer rounded-bottom d-print-none">
 
-            <div class="col-xs-12 col-sm-4 push-sm-4 text-xs-center text-nowrap">
-              <i class="fa fa-angle-double-up fa-fw"></i>
-              <a href="#" class="link-top">Seitenanfang</a>
-            </div>
-
-            <span class="col-xs-12 vspace-0-5 hidden-sm-up"></span>
-
-            <div class="col-xs-6 col-sm-4 pull-sm-4 text-xs-center text-sm-left text-nowrap">
+            <div class="col-12 col-sm-4 text-sm-left text-nowrap">
               <i class="fa fa-angle-double-left fa-fw"></i>
               <a href="#qualifications" class="navigate">Qualifikationen</a>
             </div>
 
-            <div class="col-xs-6 col-sm-4 text-xs-center text-sm-right text-nowrap"></div>
+            <div class="col-12 col-sm-4 text-sm-center text-nowrap">
+              <i class="fa fa-angle-double-up fa-fw"></i>
+              <a href="#" class="link-top">Seitenanfang</a>
+            </div>
 
-            <span class="col-xs-12 vspace-0-5 hidden-sm-up"></span>
+            <div class="col-12 col-sm-4 text-sm-right text-nowrap"></div>
+
 
           </div>
 
@@ -1398,10 +1385,8 @@
       </div>
 
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8= sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-    <!-- New version of bootstrap uses popper.js instead of tether -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha256-/5pHDZh2fv1eZImyfiThtB5Ag4LqDjyittT7fLjdT/8= sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8 sha512-vtqEYD3CAJMe31p7FahQtJdmd3OJyZ4gGK5rMmVS8x0FrGrUSq+VZieIVnlNcjwNxcQAn54Q8aR/CUCX0WnQfQ==" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha256-j+XrvkQ4jJ99Hj0pJKPr6k0RCgxDDSTs3PBqLrX2EMc= sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK sha512-AKqjMvj9WYcM8rpwsyA8izqEFGXmlr+RkggCmA0Gr1UkBjQWZKC+NpVcQ6YYPglNSpLko1b4lrNaBF8sAwd1ZA==" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/moment.js"></script>
     <script src="js/moment-precise-range.js"></script>
     <script src="js/content.js"></script>
